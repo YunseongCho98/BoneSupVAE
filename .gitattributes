@@ -1,2 +1,2 @@
-BS_dataset_split/**/*.png filter=lfs diff=lfs merge=lfs -text
 *.pth filter=lfs diff=lfs merge=lfs -text
+BS_dataset_split/**/*.png filter=lfs diff=lfs merge=lfs -text
