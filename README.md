@@ -8,16 +8,18 @@
 	• 총 241쌍(pairs)의 흉부 X-레이 이미지로 구성
 	• 각 쌍(pairs)은 원본(Original) 이미지 1장과 뼈 제거(BoneSuppression)된 타겟 이미지 1장으로 이루어짐
 	• 해상도: 1024 × 1024 픽셀
-	• 디렉토리 구조
+
+```
+• 디렉토리 구조
 
 BS_dataset_split/
 ├─ train/
-│   ├─ Original/        # 원본 이미지
-│   └─ BoneSuppression/ # 뼈 제거 이미지
+│   ├─ Original/
+│   └─ BoneSuppression/ 
 └─ val/
     ├─ Original/
     └─ BoneSuppression/
-
+```
 
 	• ChestXrayPairDataset 클래스를 통해 폴더별 파일명을 매칭하여 (input, target, filename) 형태로 로드
 
