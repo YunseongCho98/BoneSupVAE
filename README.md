@@ -5,7 +5,7 @@
 뼈 구조가 제거된 체스트 X-레이 이미지를 생성하는 ConvVAE(Convolutional Variational Autoencoder) 기반의 딥러닝 모델입니다. 원본(X-ray) 이미지에서 뼈 성분을 제거하여 진단 시 폐 영역 시각화를 돕고, 후속 AI 분석의 정확도를 높이기 위한 전처리 도구로 활용됩니다.
 
 ## 데이터셋
-	•	총 **241쌍(pairs)**의 흉부 X-레이 이미지로 구성
+	•	총 241쌍(pairs)의 흉부 X-레이 이미지로 구성
 	•	각 쌍(pairs)은 원본(Original) 이미지 1장과 뼈 제거(BoneSuppression)된 타겟 이미지 1장으로 이루어짐
 	•	해상도: 1024 × 1024 픽셀
 	•	디렉토리 구조
@@ -41,7 +41,6 @@ BS_dataset_split/
 ## 학습 과정
 ### 전처리 & DataLoader
 
-
     • transform = transforms.Compose([transforms.Resize((512, 512)), transforms.ToTensor()])
 
     • train_ds = ChestXrayPairDataset("./BS_dataset_split/train", img_size=512, transform=transform)
@@ -71,8 +70,6 @@ BS_dataset_split/
 ### 체크포인트
 
     • 매 epoch 종료 후 평균 손실이 갱신되면 모델을 저장
-
-
 
 ### 훈련 실행
 
