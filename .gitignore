@@ -1,8 +1,46 @@
-.DS_Store
-/__pycache__
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
 
 # Virtual environments
 env/
 venv/
 ENV/
 
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# Parameters and model weights
+# parameters/
+*.pth
+
+# Sample outputs and experiment results
+outputs/
+# samples/
+test_results*.csv
+
+# Dataset folders
+# center_crops/
+# center_crops_test/
+# test_samples/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+
+# OS generated files
+/.DS_Store
+.DS_Store
+Thumbs.db
