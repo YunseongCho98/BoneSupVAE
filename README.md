@@ -89,7 +89,7 @@ python test.py
 ### 원본 이미지
 ![image](./sample_ori.png)
 
-### 정답 아미지
+### 정답 이미지
 ![image](./sample_gt.png)
 
 ### 생성된 이미지
